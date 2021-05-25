@@ -1,0 +1,11 @@
+
+Correr  servidor 
+en bindHost colocar ip y ejecutar 
+
+java -Xms2g -Xmx2g -Dgraphhopper.datareader.file=ecuador-latest.osm.pbf -Dgraphhopper.graph.location=graph-cache -Dgraphhopper.graph.flag_encoders=car,foot,bike -jar graphhopper-web-0.13.0.jar server config-example.yml
+
+
+puerto 8989
+
+aplicacion 
+ "http://IP-COMPUTADORA:8989/route?point=$latI%2C$lonI&point=$latF%2C$lonF&vehicle=${modo[i]}&debug=false&locale=es&points_encoded=true&instructions=true&elevation=false&optimize=true";
